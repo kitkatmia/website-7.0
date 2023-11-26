@@ -29,7 +29,8 @@ function Bar(props: Props) {
     }}>
       <h2 style={{
         "float": "left",
-        "margin": "15px"
+        "margin": "15px",
+        "color": "#f2168b"
       }}>{props.position}</h2>
       <div className="cardsContainer" style={{
         "margin": "20px"
