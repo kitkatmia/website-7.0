@@ -7,7 +7,8 @@ interface Person {
 }
 
 interface Props {
-  position: string;
+  position: string,
+  color: string
 }
 
 function Bar(props: Props) {
@@ -19,12 +20,12 @@ function Bar(props: Props) {
   }, [props.position])
   return (
     <div className="bar" style={{
-        "border": "2px solid #f2168b",
+        "border": "2px solid " + props.color,
         "borderRadius": "20px",
         "margin": "10px",
         "outline": "none",
-        "borderColor": "#f2168b",
-        "boxShadow": "0 0 13px #f2168b"
+        "borderColor": props.color,
+        "boxShadow": "0 0 13px " + props.color
     }}>
       <h2 style={{
         "float": "left",
