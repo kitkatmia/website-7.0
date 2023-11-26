@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Bar color='#f2168b' position='Tech (the real best team)'></Bar>
+        <Bar color='#f2168b' position='Tech'></Bar>
       </header>
     </div>
   );

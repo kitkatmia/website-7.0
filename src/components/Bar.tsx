@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Card from './Card';
-
-interface Person {
-  name: string,
-  image_url: string
-}
+import Positions from "../data/positions.json";
 
 interface Props {
-  position: string,
+  position: "Directors" | "Sponsorship" | "Tech" | "Event" | "Outreach",
   color: string
 }
 
 function Bar(props: Props) {
-  let [people, setPeople] = useState<Person[]>([]);
-  useEffect(() => {
-    fetch("/positions.json").then(res => res.json()).then(res => {
-      setPeople(res[props.position])
-  })
-  }, [props.position])
   return (
     <div className="bar" style={{
         "border": "2px solid " + props.color,
@@ -32,11 +22,13 @@ function Bar(props: Props) {
         "margin": "15px",
         "color": "#f2168b"
       }}>{props.position}</h2>
+      <br></br>
       <div className="cardsContainer" style={{
-        "margin": "20px"
+        "margin": "20px",
+        "display": "inline-block"
       }}>
-      {people.map((person) => {
-        return <Card name={person.name} image_url={person.image_url} position={props.position}></Card>
+      {Positions[props.position].map((person) => {
+        return <Card key={person.name} name={person.name} image_url={person.image_url} position={props.position}></Card>
       })}
       </div>
     </div>
