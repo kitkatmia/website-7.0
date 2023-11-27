@@ -11,7 +11,8 @@
         "items": {
             "properties": {
                 "name": "string",
-                "image_url": "string"
+                "image_url": "string",
+                "link": "string"
             }
         }        
     }
