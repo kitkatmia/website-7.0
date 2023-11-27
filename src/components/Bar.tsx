@@ -15,18 +15,19 @@ function Bar(props: Props) {
         "margin": "10px",
         "outline": "none",
         "borderColor": props.color,
-        "boxShadow": "0 0 13px " + props.color
+        "boxShadow": "0 0 13px " + props.color,
+        "display": "flex",
+        "flexDirection": "column",
     }}>
       <h2 style={{
-        "float": "left",
         "margin": "15px",
-        "color": "#f2168b"
+        "color": "#f2168b",
+        "alignSelf": "start"
       }}>{props.position}</h2>
-      <br></br>
       <div className="cardsContainer" style={{
-        "margin": "20px",
+        "marginLeft": "10px",
         "display": "flex",
-        "justifyContent": "flex-start"
+        "alignItems": "flex-start"
       }}>
       {Positions[props.position].map((person) => {
         return <TeamMemberCard color={props.color} key={person.firstName + person.lastName} firstName={person.firstName} lastName={person.lastName} image={person.image_url} /* position={props.position} */></TeamMemberCard>
