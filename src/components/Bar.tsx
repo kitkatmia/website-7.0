@@ -18,6 +18,7 @@ function Bar(props: Props) {
         "boxShadow": "0 0 13px " + props.color,
         "display": "flex",
         "flexDirection": "column",
+        "overflow": "auto"
     }}>
       <h2 style={{
         "margin": "15px",
@@ -27,7 +28,8 @@ function Bar(props: Props) {
       <div className="cardsContainer" style={{
         "marginLeft": "10px",
         "display": "flex",
-        "alignItems": "flex-start"
+        "alignItems": "flex-start",
+        "flexWrap": "wrap"
       }}>
       {Positions[props.position].map((person) => {
         return <TeamMemberCard color={props.color} key={person.firstName + person.lastName} firstName={person.firstName} lastName={person.lastName} image={person.image_url} /* position={props.position} */></TeamMemberCard>
