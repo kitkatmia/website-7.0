@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import TeamMemberCard from './TeamMemberCard';
 import Positions from "../data/positions.json";
 
 interface Props {
@@ -25,10 +25,11 @@ function Bar(props: Props) {
       <br></br>
       <div className="cardsContainer" style={{
         "margin": "20px",
-        "display": "inline-block"
+        "display": "flex",
+        "justifyContent": "flex-start"
       }}>
       {Positions[props.position].map((person) => {
-        return <Card key={person.name} name={person.name} image_url={person.image_url} position={props.position}></Card>
+        return <TeamMemberCard color={props.color} key={person.firstName + person.lastName} firstName={person.firstName} lastName={person.lastName} image={person.image_url} /* position={props.position} */></TeamMemberCard>
       })}
       </div>
     </div>

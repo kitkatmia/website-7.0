@@ -1,36 +1,41 @@
 {
-    "$schema": "positions.schema.json",
     "Directors": [
         {
-            "name": "Person 1",
+            "firstName": "Person",
+            "lastName": "1",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         }
     ],
     "Sponsorship": [
         {
-            "name": "Person 2",
+            "firstName": "Person",
+            "lastName": "2",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         }
     ],
     "Tech": [
         {
-            "name": "Person 3",
+            "firstName": "Person",
+            "lastName": "3",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         },
         {
-            "name": "Person 4",
+            "firstName": "Person",
+            "lastName": "4",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         }
     ],
     "Event": [
         {
-            "name": "Person 5",
+            "firstName": "Person",
+            "lastName": "5",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         }
     ],
     "Outreach": [
         {
-            "name": "Person 6",
+            "firstName": "Person",
+            "lastName": "6",
             "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
         }
     ]

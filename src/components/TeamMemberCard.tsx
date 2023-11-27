@@ -19,8 +19,8 @@ function TeamMemberCard(props: TeamMemberCardProps) {
             display: "flex",
             flexDirection: "column",
             padding: "15px",
-            textAlign: "left"
-
+            textAlign: "left",
+            margin: "20px"
         }}>
             <div className="teamMemberCardImage" style={{
                 borderRadius: "5px",
