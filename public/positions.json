@@ -1,0 +1,25 @@
+{
+    "$schema": "positions.schema.json",
+    "Directors": [
+        {
+            "name": "Person 1",
+            "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
+        }
+    ],
+    "Sponsorship": [
+        {
+            "name": "Person 2",
+            "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
+        }
+    ],
+    "Tech (the real best team)": [
+        {
+            "name": "Person 3",
+            "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
+        },
+        {
+            "name": "Person 4",
+            "image_url": "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain"
+        }
+    ]
+}
