@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './NavBar';
 import Bar from './components/Bar';
 
 import {CssVarsProvider, extendTheme, ThemeProvider} from '@mui/joy/styles';
@@ -115,7 +115,7 @@ function App() {
             theme={bootstrapTheme}
         >
             <div className="App">
-                {/*<NavBar/>*/}
+                <NavBar/>
 
 
                 <Bar position='Tech'></Bar>
