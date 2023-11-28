@@ -3,7 +3,6 @@ import Button from "@mui/joy/Button";
 import Link from "@mui/joy/Link";
 import logo from "./mvhack_logo.png";
 import ButtonGroup from "@mui/joy/ButtonGroup";
-import { ThemeProvider } from "@mui/joy/styles";
 import Box from "@mui/system/Box";
 import Typography from "@mui/joy/Typography";
 import MVDrawer from "./MVDrawer";
@@ -52,14 +51,25 @@ export default function NavBar(props: Props) {
       <Typography level="h2" sx={{ my: 2 }}>
         MVHACKS 7.0
       </Typography>
-      <Box sx={{ display: { xs: "none", sm: "block" }, marginLeft: "auto" }}>
+      <Box
+        sx={{
+          display: {
+            xs: "none",
+            sm: "none",
+            md: "flex",
+            lg: "flex",
+            xl: "flex",
+          },
+          marginLeft: "auto",
+          minWidth: 550,
+        }}
+      >
         <ButtonGroup
           size="sm"
           style={{
             border: "2px solid rgba(255, 255, 255, 0.5)",
             borderRadius: "11px",
             overflow: "hidden",
-            display: "inline-block",
           }}
           sx={{ width: "70%" }}
         >
