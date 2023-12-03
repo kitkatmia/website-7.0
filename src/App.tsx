@@ -18,8 +18,8 @@ const palette = {
         solidHoverBorder: '#ac3770',
         solidActiveBg: '#c22973',
         solidActiveBorder: '#a6376b',
-        solidDisabledBg: '#0d6efd',
-        solidDisabledBorder: '#0d6efd',
+        solidDisabledBg: '#c22973',
+        solidDisabledBorder: '#a6376b',
     },
     neutral: {
         solidBg: '#6c757d',
@@ -73,15 +73,15 @@ const palette = {
         solidDisabledBorder: '#ffc107',
     },
     info: {
-        solidColor: '#000',
-        solidBg: '#0dcaf0',
-        solidBorder: '#0dcaf0',
-        solidHoverBg: '#31d2f2',
-        solidHoverBorder: '#25cff2',
-        solidActiveBg: '#3dd5f3',
-        solidActiveBorder: '#25cff2',
-        solidDisabledBg: '#0dcaf0',
-        solidDisabledBorder: '#0dcaf0',
+
+        solidBg: '#dc428e',
+        solidBorder: '#b33874',
+        solidHoverBg: '#c92978',
+        solidHoverBorder: '#ac3770',
+        solidActiveBg: '#c22973',
+        solidActiveBorder: '#a6376b',
+        solidDisabledBg: '#c22973',
+        solidDisabledBorder: '#a6376b',
     },
 };
 

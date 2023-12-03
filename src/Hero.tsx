@@ -6,7 +6,7 @@ import {ArrowForward} from "@mui/icons-material";
 
 const Hero = () => {
     return (
-        <Box sx={{display:"grid", gridTemplateColumns:"minmax(0,1fr) minmax(0,1fr)"}}>
+        <div className={"two-col"}>
             <Box>
                 <Chip size="lg" variant="outlined" color="neutral">
                     MVHacks 7.0
@@ -46,7 +46,7 @@ const Hero = () => {
                 </Box>
             </Box>
 
-        </Box>
+        </div>
     );
 }
 
