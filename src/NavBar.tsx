@@ -42,7 +42,7 @@ export default function NavBar(props: Props) {
       <Link href="/">
         <Box
           component="img"
-          sx={{ height: 35, maxWidth: 160, mx: 1, borderRadius: "25%" }}
+          sx={{ height: 35, maxWidth: 160, borderRadius: "25%" }}
           alt="Logo"
           src={logo}
           style={{ transform: "scale(1.5)", margin: "15px" }}

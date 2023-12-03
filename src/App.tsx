@@ -5,6 +5,9 @@ import NavBar from './NavBar';
 import Bar from './components/Bar';
 
 import {CssVarsProvider, extendTheme, ThemeProvider} from '@mui/joy/styles';
+import {Box, CssBaseline} from "@mui/joy";
+import Section from "./Section";
+import Hero from "./Hero";
 
 // TODO: change to pink color
 const palette = {
@@ -113,13 +116,22 @@ function App() {
     return (
         <CssVarsProvider
             theme={bootstrapTheme}
+            defaultMode="dark"
         >
-            <div className="App">
-                <NavBar/>
+            <CssBaseline/>
+            <Box sx={{minHeight: '100dvh'}}>
 
+                <Section>
+                    <NavBar/>
+                </Section>
 
-                <Bar position='Tech'></Bar>
-            </div>
+                <Section>
+                    <Hero></Hero>
+                </Section>
+                <Section>
+                    <Bar position='Tech'></Bar>
+                </Section>
+            </Box>
         </CssVarsProvider>
     );
 }

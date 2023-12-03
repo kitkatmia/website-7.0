@@ -1,0 +1,53 @@
+import React from 'react';
+import {Box, Chip, Input} from "@mui/joy";
+import Typography from "@mui/joy/Typography";
+import IconButton from "@mui/joy/IconButton";
+import {ArrowForward} from "@mui/icons-material";
+
+const Hero = () => {
+    return (
+        <Box sx={{display:"grid", gridTemplateColumns:"minmax(0,1fr) minmax(0,1fr)"}}>
+            <Box>
+                <Chip size="lg" variant="outlined" color="neutral">
+                    MVHacks 7.0
+                </Chip>
+                <Typography
+                    level="h1"
+                    fontWeight="xl"
+                    fontSize="clamp(1.875rem, 1.3636rem + 2.1818vw, 3rem)"
+                >
+                    The Hackathon for everyone
+                </Typography>
+                <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg">
+                    A descriptive secondary text placeholder. Use it to explain your business
+                    offer better.
+                </Typography>
+                <Box
+                    component="form"
+                    sx={{
+                        display: 'flex',
+                        gap: 1,
+                        my: 2,
+                        alignSelf: 'stretch',
+                        flexBasis: '80%',
+                    }}
+                >
+                    <Input
+                        required
+                        name="email"
+                        type="email"
+                        size="lg"
+                        placeholder="Get notified"
+                        sx={{flex: 'auto'}}
+                    />
+                    <IconButton type="submit" size="lg" variant="solid" color="primary">
+                        <ArrowForward/>
+                    </IconButton>
+                </Box>
+            </Box>
+
+        </Box>
+    );
+}
+
+export default Hero
