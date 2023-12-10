@@ -8,27 +8,12 @@ import Typography from "@mui/joy/Typography";
 import MVDrawer from "./MVDrawer";
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
-const drawerWidth = 240;
 const navItems = ["Home", "FAQs", "Team", "Sponsors"];
 
 export default function NavBar(props: Props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
   return (
     <Box
       display="flex"
@@ -42,7 +27,7 @@ export default function NavBar(props: Props) {
       <Link href="/">
         <Box
           component="img"
-          sx={{ height: 35, maxWidth: 160, borderRadius: "25%" }}
+          sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
           alt="Logo"
           src={logo}
           style={{ transform: "scale(1.5)", margin: "15px" }}
@@ -67,7 +52,7 @@ export default function NavBar(props: Props) {
         <ButtonGroup
           size="sm"
           style={{
-            border: "2px solid rgba(255, 255, 255, 0.5)",
+            border: "none",
             borderRadius: "11px",
             overflow: "hidden",
           }}
@@ -76,16 +61,21 @@ export default function NavBar(props: Props) {
           {navItems.map((item) => (
             <Button
               key={item}
-              sx={{ color: "#fff", textTransform: "none" }}
-              variant="solid"
-              style={{
+              sx={{
+                textTransform: "none",
+                color: "#fff",
                 margin: 0,
                 background:
                   "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 0.7), rgba(169,169,169, 0.5))",
-                border: "none",
+                border: "none !important",
                 fontSize: "90%",
                 boxShadow: "0 0 100px 0 rgba(169,169,169, 0.5)",
                 width: "100px",
+                transition: "background-color 0.3s",
+                "&:hover": {
+                  background:
+                    "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 1.3), rgba(169,169,169, 0.5))",
+                },
               }}
             >
               {item}
