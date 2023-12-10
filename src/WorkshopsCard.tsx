@@ -15,6 +15,7 @@ export default function WorkshopsCard() {
         justifyContent: "flex-end",
         width: "50%",
         minWidth: "sm",
+        background: "transparent",
       }}
     >
       <Typography

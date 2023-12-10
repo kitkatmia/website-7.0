@@ -26,7 +26,8 @@ export default function Stats() {
         border: "1px solid #c92978",
         borderRadius: "11px",
         width: "50%",
-        minWidth: "sm",
+				minWidth: "sm",
+				background: "transparent",
       }}
     >
       <Typography
