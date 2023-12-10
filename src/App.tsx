@@ -8,6 +8,7 @@ import {CssVarsProvider, extendTheme, ThemeProvider} from '@mui/joy/styles';
 import {Box, CssBaseline} from "@mui/joy";
 import Section from "./Section";
 import Hero from "./Hero";
+import ImageCarousel from './components/ImageCarousel';
 
 // TODO: change to pink color
 const palette = {
@@ -130,6 +131,10 @@ function App() {
                 </Section>
                 <Section>
                     <Bar position='Tech'></Bar>
+                </Section>
+                <Section>
+                    <ImageCarousel image_urls={
+                        "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain ".repeat(100).split(" ")}></ImageCarousel>
                 </Section>
             </Box>
         </CssVarsProvider>
