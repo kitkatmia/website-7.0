@@ -1,17 +1,16 @@
 import * as React from "react";
 import Button from "@mui/joy/Button";
-import Link from "@mui/joy/Link";
 import logo from "./mvhack_logo.png";
 import ButtonGroup from "@mui/joy/ButtonGroup";
 import Box from "@mui/system/Box";
 import Typography from "@mui/joy/Typography";
 import MVDrawer from "./MVDrawer";
-
+import { Link as RouterLink } from 'react-router-dom';
 interface Props {
   window?: () => Window;
 }
 
-const navItems = ["Home", "FAQs", "Team", "Sponsors"];
+const navItems = [["Home","/"], ["FAQs","/"], ["Team","/team"], ["Sponsors","/"]];
 
 export default function NavBar(props: Props) {
   return (
@@ -21,20 +20,18 @@ export default function NavBar(props: Props) {
       component="nav"
       position="static"
       flexDirection="row"
-      style={{ background: "transparent", boxShadow: "none" }}
+      style={{ background: "transparent", boxShadow: "none", width: "100%" }}
     >
       <MVDrawer />
-      <Link href="/">
         <Box
           component="img"
           sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
           alt="Logo"
           src={logo}
           style={{ transform: "scale(1.5)", margin: "15px" }}
-        />
-      </Link>
+          />
       <Typography level="h2" sx={{ my: 2 }}>
-        MVHACKS 7.0
+        MVHacks 7.0
       </Typography>
       <Box
         sx={{
@@ -53,14 +50,14 @@ export default function NavBar(props: Props) {
           size="sm"
           style={{
             border: "none",
-            borderRadius: "11px",
             overflow: "hidden",
           }}
-          sx={{ width: "70%" }}
+          sx={{ width: "80%" }}
         >
           {navItems.map((item) => (
+            <RouterLink to={item[1]} key={item[0]} style={{ textDecoration: 'none', color: 'inherit', border: 'none', margin: 0, padding: 0}}>
             <Button
-              key={item}
+              key={item[0]}
               sx={{
                 textTransform: "none",
                 color: "#fff",
@@ -68,25 +65,29 @@ export default function NavBar(props: Props) {
                 background:
                   "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 0.7), rgba(169,169,169, 0.5))",
                 border: "none !important",
+                boxShadow: "inset 0 0 100px 0 linear-gradient(90deg, rgba(169,169,169, 0.5) 0%, rgba(169,169,169, 0) 100%)",
                 fontSize: "90%",
-                boxShadow: "0 0 100px 0 rgba(169,169,169, 0.5)",
-                width: "100px",
+                minWidth: "100px",
+                width: "25%",
                 transition: "background-color 0.3s",
                 "&:hover": {
                   background:
-                    "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 1.3), rgba(169,169,169, 0.5))",
+                    "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 1.1), rgba(169,169,169, 0.5))",
                 },
               }}
             >
-              {item}
+              {item[0]}
             </Button>
+            </RouterLink>
           ))}
         </ButtonGroup>
         <Button
           size="sm"
           sx={{
             ml: 1,
-            width: "95px",
+            flexShrink: 0,
+            minWidth: "80px",
+            width: "20%",
             textTransform: "none",
             borderRadius: "11px",
           }}
