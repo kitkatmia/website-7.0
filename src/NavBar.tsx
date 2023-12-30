@@ -56,7 +56,7 @@ export default function NavBar(props: Props) {
           sx={{ width: "80%" }}
         >
           {navItems.map((item) => (
-            <RouterLink to={item[1]} key={item[0]} style={{ textDecoration: 'none', color: 'inherit', border: 'none', margin: 0, padding: 0}}>
+            <RouterLink to={item[1]} key={item[0]} style={{ textDecoration: 'none', color: 'inherit', border: 'none', margin: 0}}>
             <Button
               key={item[0]}
               sx={{
