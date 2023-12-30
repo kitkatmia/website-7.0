@@ -1,14 +1,12 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./NavBar";
-import Bar from "./components/Bar";
 
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import { Box, CssBaseline } from "@mui/joy";
-import Section from "./Section";
-import Hero from "./Hero";
-import Stats from "./Stats";
-// import WorkshopsCard from "./WorkshopsCard";
+import Team from "./Team";
+import Home from "./Home";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+
 
 // TODO: change to pink color
 const palette = {
@@ -117,23 +115,15 @@ function App() {
     <CssVarsProvider theme={bootstrapTheme} defaultMode="dark">
       <CssBaseline />
       <Box sx={{ minHeight: "100dvh" }}>
-        <Section>
-          <NavBar />
-        </Section>
-
-        <Section>
-          <Hero></Hero>
-        </Section>
-        <Section>
-          <Bar position="Tech"></Bar>
-        </Section>
-        <Section>
-          <Stats></Stats>
-        </Section>
-        <Section>{/* <WorkshopsCard></WorkshopsCard> */}</Section>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/team" element={<Team />}></Route>
+          </Routes>
+        </BrowserRouter>
       </Box>
     </CssVarsProvider>
-  );
+  )
 }
 
 export default App;

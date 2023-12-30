@@ -6,7 +6,7 @@ import { styled } from "@mui/joy/styles";
 import Sheet from "@mui/joy/Sheet";
 
 const Item = styled(Sheet)(({ theme }) => ({
-  background: `linear-gradient(to right, #c4c4c4, #787878)`,
+  background: `linear-gradient(to right, #878787, #4d4d4d)`,
   ...theme.typography["body-sm"],
   padding: theme.spacing(1),
   textAlign: "center",
@@ -14,8 +14,8 @@ const Item = styled(Sheet)(({ theme }) => ({
   color: "white",
 }));
 const stats = [
-  [120, "Participants"],
-  [73, "Submissions"],
+  [87, "Participants"],
+  [35, "Submissions"],
   [32, "Volunteers"],
 ];
 
@@ -53,7 +53,7 @@ export default function Stats() {
         {stats.map((stat) => (
           <Item
             key={stat[0]}
-            sx={{ minWidth: "97px", width: "20%", margin: "7px" }}
+            sx={{ minWidth: "97px", width: "20%",  minHeight: "70px", height: "15%", margin: "7px", justifyContent: "center", alignItems: "center"}}
           >
             <Typography
               sx={{

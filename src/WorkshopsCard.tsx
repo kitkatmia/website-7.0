@@ -1,10 +1,21 @@
 import * as React from "react";
-import List from "@mui/joy/List";
 import Box from "@mui/system/Box";
-import ListItem from "@mui/joy/ListItem";
-import ListSubheader from "@mui/joy/ListSubheader";
-import ListItemButton from "@mui/joy/ListItemButton";
-import Typography from "@mui/joy/Typography";
+import { Typography } from "@mui/joy";
+import Grid from "@mui/joy/Grid";
+import { styled } from "@mui/joy/styles";
+import Sheet from "@mui/joy/Sheet";
+
+
+const Item = styled(Sheet)(({ theme }) => ({
+  background: `linear-gradient(to right, #878787, #4d4d4d)`,
+  ...theme.typography["body-sm"],
+  padding: theme.spacing(1),
+  textAlign: "center",
+  borderRadius: 10,
+  color: "white",
+}));
+const stats = ["Beginner-friendly", "Prizes","Catered Food"
+];
 
 export default function WorkshopsCard() {
   return (
@@ -12,7 +23,7 @@ export default function WorkshopsCard() {
       sx={{
         border: "1px solid #c92978",
         borderRadius: "11px",
-        justifyContent: "flex-end",
+        marginLeft: "auto",
         width: "50%",
         minWidth: "sm",
         background: "transparent",
@@ -22,60 +33,37 @@ export default function WorkshopsCard() {
         level="h4"
         sx={{ my: 2, color: "#c92978", textAlign: "center" }}
       >
-        Worshops and Advice to Help You Grow
+        Workshops and advice to help you grow
       </Typography>
-      <List>
-        <ListItem nested sx={{ fontFamily: "sans-serif" }}>
-          <ListSubheader
-            sx={{
-              fontSize: "1.4rem",
-              borderBottom: "1px solid #c92978",
-              paddingBottom: "5px",
-              width: "50%",
-              left: "25%",
-            }}
+      <Typography
+        level="title-md"
+        sx={{ my: 2, color: "#808080", textAlign: "center", margin: "10px" }}
+      >
+        With specialized judges that are currently in the tech industry, at MVHacks you'll receive the best feedback to help you improve.
+      </Typography>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
+        marginBottom="10px"
+      >
+        {stats.map((stat) => (
+          <Item
+            key={stat}
+            sx={{ minWidth: "97px", width: "20%",  minHeight: "70px", height: "15%", margin: "7px", display: "flex", justifyContent: "center", alignItems: "center"}}
           >
-            Day 1
-          </ListSubheader>
-          <List>
-            <ListItem>
-              <ListItemButton sx={{ fontSize: "1.2rem" }}>
-                Event 1
-              </ListItemButton>
-            </ListItem>
-            <ListItem>
-              <ListItemButton sx={{ fontSize: "1.2rem" }}>
-                Event 2
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </ListItem>
-        <ListItem nested sx={{ fontFamily: "sans-serif", marginTop: "15px" }}>
-          <ListSubheader
-            sx={{
-              fontSize: "1.4rem",
-              borderBottom: "1px solid #c92978",
-              paddingBottom: "5px",
-              width: "50%",
-              left: "25%",
-            }}
-          >
-            Day 2
-          </ListSubheader>
-          <List>
-            <ListItem>
-              <ListItemButton sx={{ fontSize: "1.2rem" }}>
-                Event 1
-              </ListItemButton>
-            </ListItem>
-            <ListItem>
-              <ListItemButton sx={{ fontSize: "1.2rem" }}>
-                Event 2
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </ListItem>
-      </List>
+            <Typography
+              sx={{
+                color: "white",
+                fontSize: { xs: "13px", sm: "14px", md: "15px" },
+              }}
+            >
+              {stat}
+            </Typography>
+          </Item>
+        ))}
+      </Grid>
     </Box>
   );
 }
