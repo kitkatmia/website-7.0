@@ -93,6 +93,9 @@ export default function NavBar(props: Props) {
           variant="solid"
           color="success"
           style={{ border: "none", fontSize: "90%" }}
+          onClick={() => {
+              document.getElementsByName("email")[0].focus();
+          }}
         >
           Sign Up
         </Button>

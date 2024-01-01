@@ -8,6 +8,8 @@ import { Box, CssBaseline } from "@mui/joy";
 import Section from "./Section";
 import Hero from "./Hero";
 import Stats from "./Stats";
+import Footer from "./Footer";
+import MoreStats from "./MoreStats";
 // import WorkshopsCard from "./WorkshopsCard";
 
 // TODO: change to pink color
@@ -120,17 +122,28 @@ function App() {
         <Section>
           <NavBar />
         </Section>
-
         <Section>
           <Hero></Hero>
         </Section>
         <Section>
           <Bar position="Tech"></Bar>
         </Section>
-        <Section>
-          <Stats></Stats>
-        </Section>
+        <Box sx={{
+          display: "flex",
+          flexDirection: "row"
+        }}>
+          <Box sx={{p: "1rem", pl: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)"}}>
+            <Stats></Stats>
+          </Box>
+          <Box sx={{p: "1rem", pr: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)"}}>
+            <MoreStats></MoreStats>
+          </Box>
+
+        </Box>
         <Section>{/* <WorkshopsCard></WorkshopsCard> */}</Section>
+        <Section>
+          <Footer></Footer>
+        </Section>
       </Box>
     </CssVarsProvider>
   );
