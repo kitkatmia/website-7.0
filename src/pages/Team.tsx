@@ -12,7 +12,19 @@ function Team() {
         <NavBar />
       </Section>
       <Section>
+        <Bar position="Directors"></Bar>
+      </Section>
+      <Section>
         <Bar position="Tech"></Bar>
+      </Section>
+      <Section>
+        <Bar position="Event"></Bar>
+      </Section>
+      <Section>
+        <Bar position="Outreach"></Bar>
+      </Section>
+      <Section>
+        <Bar position="Sponsorship"></Bar>
       </Section>
     </Box>
   );

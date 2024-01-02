@@ -34,6 +34,7 @@ const Hero = () => {
                 >
                     <Input
                         required
+                        id="email"
                         name="email"
                         type="email"
                         size="lg"

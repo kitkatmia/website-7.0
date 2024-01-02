@@ -97,25 +97,36 @@ export default function NavBar(props: Props) {
             </RouterLink>
           ))}
         </ButtonGroup>
-        <Button
-          size="sm"
-          sx={{
-            ml: 1,
-            flexShrink: 0,
-            minWidth: "80px",
-            width: "20%",
-            textTransform: "none",
-            borderRadius: "11px",
+        <RouterLink
+          to={"/#email"}
+          key={"Sign up"}
+          style={{
+            textDecoration: "none",
+            color: "inherit",
+            border: "none",
+            margin: 0,
           }}
-          variant="solid"
-          color="success"
-          style={{ border: "none", fontSize: "90%" }}
-          onClick={() => {
-            document.getElementsByName("email")[0].focus();
-        }}
         >
-          Sign Up
-        </Button>
+          <Button
+            size="sm"
+            sx={{
+              ml: 1,
+              flexShrink: 0,
+              minWidth: "80px",
+              width: "20%",
+              textTransform: "none",
+              borderRadius: "11px",
+            }}
+            variant="solid"
+            color="success"
+            style={{ border: "none", fontSize: "90%" }}
+            //   onClick={() => {
+            //     document.getElementsByName("email")[0].focus();
+            // }}
+          >
+            Sign Up
+          </Button>
+        </RouterLink>
       </Box>
     </Box>
   );

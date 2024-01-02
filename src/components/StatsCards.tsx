@@ -57,10 +57,13 @@ export default function Stats() {
           key={index}
           sx={{
             width: "100%",
-            p: "1rem",
+            // p: "1rem",
             pl: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)",
+            margin: "1%",
+            marginBottom: "2%",
+            padding: "0",
             display: "flex",
-            margin: "0.5%",
+            justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
           }}
         >
           <Box
@@ -69,7 +72,6 @@ export default function Stats() {
               borderRadius: "11px",
               width: "50%",
               //TODO: debug alternating sides
-              // justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
               minWidth: "sm",
               background: "transparent",
             }}

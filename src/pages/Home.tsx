@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import Section from "../components/Section";
 import Hero from "../components/Hero";
 import Box from "@mui/joy/Box";
-import Stats from "../components/StatsCards";
+import StatsCards from "../components/StatsCards";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
         <Hero></Hero>
       </Section>
       <Section>
-        <Stats></Stats>
+        <StatsCards></StatsCards>
       </Section>
       {/* <Box sx={{
           display: "flex",
