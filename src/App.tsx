@@ -3,10 +3,9 @@ import "./App.css";
 
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import { Box, CssBaseline } from "@mui/joy";
-import Team from "./Team";
-import Home from "./Home";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
-
+import Team from "./pages/Team";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // TODO: change to pink color
 const palette = {
@@ -123,7 +122,7 @@ function App() {
         </BrowserRouter>
       </Box>
     </CssVarsProvider>
-  )
+  );
 }
 
 export default App;
