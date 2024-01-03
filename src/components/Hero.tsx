@@ -19,8 +19,7 @@ const Hero = () => {
                     The Hackathon for everyone
                 </Typography>
                 <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg">
-                    A descriptive secondary text placeholder. Use it to explain your business
-                    offer better.
+                    MVHacks in a hackathon designed to improve your tech skills in a collaborative environment
                 </Typography>
                 <Box
                     component="form"
@@ -34,6 +33,7 @@ const Hero = () => {
                 >
                     <Input
                         required
+                        id="email"
                         name="email"
                         type="email"
                         size="lg"
