@@ -14,7 +14,7 @@ export default function Footer() {
             flexDirection="column"
             style={{ background: "transparent", boxShadow: "none" }}
         >
-            <Link href="https://www.instagram.com/mvhacks/" sx={{marginBottom: "5px"}}>
+            <Link href="https://www.instagram.com/mvhacks/" target="_blank" sx={{marginBottom: "5px"}}>
                 <Box
                     component="img"
                     sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
@@ -24,7 +24,7 @@ export default function Footer() {
                 />
             </Link>
 
-            <Link href="https://mvhacks-6-0.devpost.com/project-gallery" sx={{marginBottom: "10px"}}>
+            <Link href="https://mvhacks-6-0.devpost.com/project-gallery" target="_blank" sx={{marginBottom: "10px"}}>
                 <Button
                     size="sm"
                     sx={{
