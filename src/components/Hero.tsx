@@ -33,6 +33,7 @@ const Hero = () => {
                 >
                     <Input
                         required
+                        autoFocus={true}
                         id="email"
                         name="email"
                         type="email"

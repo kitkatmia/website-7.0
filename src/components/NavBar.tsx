@@ -98,7 +98,7 @@ export default function NavBar(props: Props) {
           ))}
         </ButtonGroup>
         <RouterLink
-          to={"/#email"}
+          to={"http://localhost:3000/#email"}
           key={"Sign up"}
           style={{
             textDecoration: "none",
@@ -120,9 +120,9 @@ export default function NavBar(props: Props) {
             variant="solid"
             color="success"
             style={{ border: "none", fontSize: "90%" }}
-            //   onClick={() => {
-            //     document.getElementsByName("email")[0].focus();
-            // }}
+              onClick={(evt) => {
+                  document.getElementById("email")?.focus();
+            }}
           >
             Sign Up
           </Button>
