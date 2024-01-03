@@ -68,10 +68,10 @@ export default function Stats() {
         >
           <Box
             sx={{
+              // TODO: fix scaling on mobile
               border: "1px solid #c92978",
               borderRadius: "11px",
               width: "50%",
-              //TODO: debug alternating sides
               minWidth: "sm",
               background: "transparent",
             }}

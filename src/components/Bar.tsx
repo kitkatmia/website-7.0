@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Papa, { ParseResult } from "papaparse";
-import { useState, useEffect } from "react";
-import Positions from "../data/positions.json";
+import { useState } from "react";
 import { Box, CardContent } from "@mui/joy";
 import { Card as MuiCard } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
@@ -10,6 +9,8 @@ import Typography from "@mui/joy/Typography";
 interface Props {
   position: "Directors" | "Sponsorship" | "Tech" | "Event" | "Outreach";
 }
+
+// bar = outline box for each position w/ internal stuff
 
 function Bar(props: Props) {
   type Data = {
@@ -39,7 +40,7 @@ function Bar(props: Props) {
 
   React.useEffect(() => {
     getCSV();
-  }, []);
+  });
 
   return (
     <MuiCard variant={"plain"} sx={{ border: "1px solid #c92978" }}>
