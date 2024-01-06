@@ -55,7 +55,7 @@ export default function NavBar(props: Props) {
           size="sm"
           style={{
             border: "none",
-            borderRadius: "11px",
+            borderRadius: "5px",
             overflow: "hidden",
           }}
           sx={{ width: "80%" }}
