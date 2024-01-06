@@ -163,6 +163,11 @@ const useTeamData = () => {
       "Link(s)": "nikolai@mvhacks.io",
       Image: "",
     },
+    "Amina Erezhepova": {
+      Team: "Outreach Member",
+      "Link(s)": "amina@mvhacks.io",
+      Image: "",
+    },
   };
   const getCSV = (currentValues: { [key: string]: shortData }) => {
     Papa.parse("/team_data.csv", {
