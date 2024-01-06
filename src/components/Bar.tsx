@@ -1,10 +1,9 @@
 import React from "react";
 import Card from "./Card";
-import Papa, { ParseResult } from "papaparse";
-import { useState } from "react";
 import { Box, CardContent } from "@mui/joy";
 import { Card as MuiCard } from "@mui/joy";
 import Typography from "@mui/joy/Typography";
+import useTeamData from "./teamData";
 
 interface Props {
   position: "Directors" | "Sponsorship" | "Tech" | "Event" | "Outreach";
@@ -13,34 +12,7 @@ interface Props {
 // bar = outline box for each position w/ internal stuff
 
 function Bar(props: Props) {
-  type Data = {
-    Timestamp: string;
-    Name: string;
-    Team: string;
-    "Link(s)": string;
-    Image: string;
-  };
-
-  type Values = {
-    data: Data[];
-  };
-  const [values, setValues] = useState<Values | undefined>();
-
-  const getCSV = () => {
-    Papa.parse("/team_data.csv", {
-      header: true,
-      download: true,
-      skipEmptyLines: true,
-      delimiter: ",",
-      complete: (results: ParseResult<Data>) => {
-        setValues(results);
-      },
-    });
-  };
-
-  React.useEffect(() => {
-    getCSV();
-  });
+  const { values } = useTeamData();
 
   return (
     <MuiCard variant={"plain"} sx={{ border: "1px solid #c92978" }}>
@@ -54,19 +26,26 @@ function Bar(props: Props) {
       >
         <MuiCard variant={"solid"} color={"primary"}>
           <CardContent>
-            <Typography level="h1">{props.position}</Typography>
+            <Typography level={props.position === "Sponsorship" ? "h2" : "h1"}>
+              {props.position}
+            </Typography>
           </CardContent>
         </MuiCard>
         {values &&
-          values.data.map((person) => {
-            if (person["Team"].includes(props.position.slice(0,-1))) {
+          Object.keys(values).map((name) => {
+            if (values[name]["Team"].includes(props.position.slice(0, -1))) {
+              const imageUrl =
+                values[name]["Image"] !== ""
+                  ? "/images/" + name + ".jpeg"
+                  : "/images/default.webp";
+              console.log("Generated Image URL:", imageUrl);
               return (
                 <Card
-                  key={person["Name"]}
-                  name={person["Name"]}
-                  image_url={"/images/" + person["Name"] + ".jpeg"}
-                  position={person["Team"]}
-                  link={person["Link(s)"]}
+                  key={name}
+                  name={name}
+                  image_url={imageUrl}
+                  position={values[name]["Team"]}
+                  link={values[name]["Link(s)"]}
                 ></Card>
               );
             } else {
