@@ -5,11 +5,19 @@ import Drawer from "@mui/joy/Drawer";
 import List from "@mui/joy/List";
 import ListItemButton from "@mui/joy/ListItemButton";
 import ModalClose from "@mui/joy/ModalClose";
+import { Link as RouterLink } from "react-router-dom";
 import Menu from "@mui/icons-material/Menu";
 
 export default function MVDrawer() {
   const [open, setOpen] = React.useState(false);
 
+  const navItems = [
+    ["Home", "/"],
+    ["FAQs", "/"],
+    ["Team", "/team"],
+    ["Sponsors", "/"],
+  ];
+  
   return (
     <React.Fragment>
       <IconButton
@@ -50,12 +58,23 @@ export default function MVDrawer() {
             flex: "none",
             fontSize: "xl",
             "& > div": { justifyContent: "center" },
+            alignItems: "center",
           }}
         >
-          <ListItemButton sx={{ fontWeight: "lg" }}>Home</ListItemButton>
-          <ListItemButton>FAQs</ListItemButton>
-          <ListItemButton>Team</ListItemButton>
-          <ListItemButton>Sponsors</ListItemButton>
+          {navItems.map((item) => (
+            <RouterLink
+              to={item[1]}
+              key={item[0]}
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                border: "none",
+                margin: 0,
+              }}
+            >
+              <ListItemButton sx={{ fontWeight: "lg" }}>{item[0]}</ListItemButton>
+            </RouterLink>
+          ))}
         </List>
       </Drawer>
     </React.Fragment>
