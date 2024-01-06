@@ -5,6 +5,7 @@ import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import { Box, CssBaseline } from "@mui/joy";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
+import Faq from "./pages/Faq";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // TODO: change to pink color
@@ -118,6 +119,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/team" element={<Team />}></Route>
+            <Route path="/faqs" element={<Faq />}></Route>
           </Routes>
         </BrowserRouter>
       </Box>
