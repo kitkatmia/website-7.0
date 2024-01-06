@@ -138,7 +138,11 @@ const useTeamData = () => {
       "Link(s)": "owen@mvhacks.io",
       Image: "",
     },
-
+    "Sander Vonk": {
+      Team: "Outreach Director",
+      "Link(s)": "sander@mvhacks.io",
+      Image: "",
+    },
     "Saahiti Bondalapati": {
       Team: "Outreach Member",
       "Link(s)": "saahiti@mvhacks.io",
@@ -157,11 +161,6 @@ const useTeamData = () => {
     "Niko Sohmers": {
       Team: "Outreach Member",
       "Link(s)": "nikolai@mvhacks.io",
-      Image: "",
-    },
-    "Sander Vonk": {
-      Team: "Outreach Director",
-      "Link(s)": "sander@mvhacks.io",
       Image: "",
     },
   };
