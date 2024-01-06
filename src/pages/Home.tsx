@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Box from "@mui/joy/Box";
 import StatsCards from "../components/StatsCards";
 import Footer from "../components/Footer";
+import ImageCarousel from "../components/ImageCarousel";
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
       </Section>
       <Section>
         <StatsCards></StatsCards>
+      </Section>
+      <Section>
+          <ImageCarousel image_urls={["awards", "food", "hackers", "mrnguyen", "presentation"].map(image => `/images/${image}.jpg`)}></ImageCarousel>
       </Section>
       {/* <Box sx={{
           display: "flex",
