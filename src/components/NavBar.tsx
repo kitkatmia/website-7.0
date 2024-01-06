@@ -12,7 +12,7 @@ interface Props {
 
 const navItems = [
   ["Home", "/"],
-  ["FAQs", "/"],
+  ["FAQs", "/faqs"],
   ["Team", "/team"],
   ["Sponsors", "/"],
 ];
