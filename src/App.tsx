@@ -133,8 +133,7 @@ function App() {
                     <Bar position='Tech'></Bar>
                 </Section>
                 <Section>
-                    <ImageCarousel image_urls={
-                        "https://th.bing.com/th/id/OIP.ybB2a0HimX1I-ybBY4pOPwHaHa?rs=1&pid=ImgDetMain ".repeat(100).split(" ")}></ImageCarousel>
+                    <ImageCarousel image_urls={["awards", "food", "hackers", "mrnguyen", "presentation"].map(image => `/images/${image}.jpg`)}></ImageCarousel>
                 </Section>
             </Box>
         </CssVarsProvider>
