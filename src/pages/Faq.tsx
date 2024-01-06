@@ -46,10 +46,7 @@ const questions: Question[] = [
     question: "What are the rules?",
     answer: `Be nice, respectful, and have fun! Hackers are expected to behave appropriately and safely at all times, and abide by the MLH Code of Conduct.`,
   },
-  {
-    question: "I have other questions!",
-    answer: `Contact us by email at <u><a href="mailto:contact@mvhacks.io">contact@mvhacks.io</a></u>.`,
-  },
+
 ];
 
 const Faq = () => {
@@ -65,6 +62,10 @@ const Faq = () => {
                 <AccordionDetails>{value.answer}</AccordionDetails>
             </Accordion>
         })}
+        <Accordion>
+            <AccordionSummary>I have other questions!</AccordionSummary>
+            <AccordionDetails>Contact us by email at <a href="mailto:contact@mvhacks.io">contact@mvhacks.io</a></AccordionDetails>
+        </Accordion>
       </AccordionGroup>
       <Footer></Footer>
     </Box>
