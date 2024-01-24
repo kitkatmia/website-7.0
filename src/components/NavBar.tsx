@@ -78,17 +78,17 @@ export default function NavBar(props: Props) {
                   color: "#fff",
                   margin: 0,
                   background:
-                    "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 0.7), rgba(169,169,169, 0.5))",
+                    "linear-gradient(to right,rgba(148, 148, 148, 0.5), rgba(125, 125, 125, 0.7), rgba(148, 148, 148, 0.5))",
                   border: "none !important",
                   boxShadow:
-                    "inset 0 0 100px 0 linear-gradient(90deg, rgba(169,169,169, 0.5) 0%, rgba(169,169,169, 0) 100%)",
+                    "inset 0 0 100px 0 linear-gradient(90deg, rgba(148, 148, 148, 0.5) 0%, rgba(148, 148, 148, 0) 100%)",
                   fontSize: "90%",
                   minWidth: "100px",
                   width: "25%",
                   transition: "background-color 0.3s",
                   "&:hover": {
                     background:
-                      "linear-gradient(to right,rgba(169,169,169, 0.5), rgba(168,168,168, 1.1), rgba(169,169,169, 0.5))",
+                      "linear-gradient(to right,rgba(148, 148, 148, 0.5), rgba(125, 125, 125, 1.1), rgba(148, 148, 148, 0.5))",
                   },
                 }}
               >
@@ -120,8 +120,8 @@ export default function NavBar(props: Props) {
             variant="solid"
             color="success"
             style={{ border: "none", fontSize: "90%" }}
-              onClick={(evt) => {
-                  document.getElementById("email")?.focus();
+            onClick={(evt) => {
+              document.getElementById("email")?.focus();
             }}
           >
             Sign Up
