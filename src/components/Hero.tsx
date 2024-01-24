@@ -29,11 +29,24 @@ const Hero = () => {
             flexBasis: "80%",
           }}
         >
-          <input type="hidden" name="access_key" value="50e99b85-f308-4801-9635-b6e5c1459742" />
-                    {/*Access key is public anyway*/}
-                    <input type="hidden" name="subject" value="New sign-up" />
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-                    <input type="checkbox" name="botcheck" id="" style={{"display": "none"}} />
+          <input
+            type="hidden"
+            name="access_key"
+            value="50e99b85-f308-4801-9635-b6e5c1459742"
+          />
+          {/*Access key is public anyway*/}
+          <input type="hidden" name="subject" value="New sign-up" />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <input
+            type="checkbox"
+            name="botcheck"
+            id=""
+            style={{ display: "none" }}
+          />
           <Input
             required
             autoFocus={true}
