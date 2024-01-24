@@ -14,7 +14,7 @@ const navItems = [
   ["Home", "/"],
   ["FAQs", "/faqs"],
   ["Team", "/team"],
-  ["Sponsors", "/"],
+  ["Sponsors", "/sponsorship"],
 ];
 
 export default function NavBar(props: Props) {

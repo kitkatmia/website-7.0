@@ -7,6 +7,7 @@ import Box from "@mui/joy/Box";
 import StatsCards from "../components/StatsCards";
 import Footer from "../components/Footer";
 import ImageCarousel from "../components/ImageCarousel";
+import Sponsors from "../components/Sponsors";
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
       </Section>
       <Section>
           <ImageCarousel image_urls={["awards", "food", "hackers", "mrnguyen", "presentation"].map(image => `/images/${image}.jpg`)}></ImageCarousel>
+      </Section>
+      <Section>
+          <Sponsors></Sponsors>
       </Section>
       {/* <Box sx={{
           display: "flex",

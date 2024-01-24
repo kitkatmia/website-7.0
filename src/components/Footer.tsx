@@ -12,7 +12,7 @@ export default function Footer() {
             component="nav"
             position="static"
             flexDirection="column"
-            style={{ background: "transparent", boxShadow: "none" }}
+            style={{ background: "transparent", boxShadow: "none", paddingBottom: "30px"}}
         >
             <Link href="https://www.instagram.com/mvhacks/" target="_blank" sx={{marginBottom: "5px"}}>
                 <Box
