@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Faq from "./pages/Faq";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Sponsorship from "./components/Sponsorship";
 
 // TODO: change to pink color
 const palette = {
@@ -120,6 +121,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/team" element={<Team />}></Route>
             <Route path="/faqs" element={<Faq />}></Route>
+            <Route path="/sponsorship" element={<Sponsorship />}></Route>
           </Routes>
         </BrowserRouter>
       </Box>
