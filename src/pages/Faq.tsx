@@ -55,18 +55,21 @@ const Faq = () => {
       <Section>
         <NavBar />
       </Section>
-      <AccordionGroup>
-        {questions.map(value => {
+      <Section>
+        <AccordionGroup>
+          {questions.map(value => {
             return <Accordion>
-                <AccordionSummary>{value.question}</AccordionSummary>
-                <AccordionDetails>{value.answer}</AccordionDetails>
+              <AccordionSummary>{value.question}</AccordionSummary>
+              <AccordionDetails>{value.answer}</AccordionDetails>
             </Accordion>
-        })}
-        <Accordion>
+          })}
+          <Accordion>
             <AccordionSummary>I have other questions!</AccordionSummary>
             <AccordionDetails>Contact us by email at <a href="mailto:contact@mvhacks.io">contact@mvhacks.io</a></AccordionDetails>
-        </Accordion>
-      </AccordionGroup>
+          </Accordion>
+        </AccordionGroup>
+      </Section>
+
       <Footer></Footer>
     </Box>
   );
