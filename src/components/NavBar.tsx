@@ -98,7 +98,7 @@ export default function NavBar(props: Props) {
           ))}
         </ButtonGroup>
         <RouterLink
-          to={"http://localhost:3000/#email"}
+          to={"/"}
           key={"Sign up"}
           style={{
             textDecoration: "none",
