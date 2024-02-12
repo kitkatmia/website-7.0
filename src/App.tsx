@@ -7,7 +7,7 @@ import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Faq from "./pages/Faq";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Sponsorship from "./components/Sponsorship";
+import Sponsorship from "./pages/Sponsorship";
 
 // TODO: change to pink color
 const palette = {
