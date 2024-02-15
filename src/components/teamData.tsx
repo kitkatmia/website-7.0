@@ -87,6 +87,11 @@ const useTeamData = () => {
       "Link(s)": "contac@mvhacks.io",
       Image: "",
     },
+    "Ethan Wing": {
+      Team: "Event Member",
+      "Link(s)": "ethanw@mvhacks.io",
+      Image: "",
+    },
     "Anya Singh": {
       Team: "Event Member",
       "Link(s)": "anya@mvhacks.io",

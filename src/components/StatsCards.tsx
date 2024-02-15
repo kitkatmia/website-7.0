@@ -119,7 +119,7 @@ const StatCard: React.FC<StatCardProps> = ({ card, index }) => {
           width: "100%",
           pl: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)",
           margin: "1%",
-          marginBottom: "2%",
+          marginBottom: "5%",
           padding: "0",
           display: "flex",
           justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
@@ -127,11 +127,9 @@ const StatCard: React.FC<StatCardProps> = ({ card, index }) => {
       >
         <Box
           sx={{
-            // TODO: fix scaling on mobile
             border: "1px solid #c92978",
             borderRadius: "11px",
-            width: "50%",
-            minWidth: "sm",
+            width: {lg:"50%",md:"50%", sm:"100%", xs:"100%"},
             background: "transparent",
           }}
         >
