@@ -3,6 +3,7 @@ import "../App.css";
 import Bar from "../components/Bar";
 import NavBar from "../components/NavBar";
 import { Box } from "@mui/joy";
+import Footer from "../components/Footer";
 import Section from "../components/Section";
 
 function Team() {
@@ -26,6 +27,7 @@ function Team() {
       <Section>
         <Bar position="Sponsorship"></Bar>
       </Section>
+      <Footer />
     </Box>
   );
 }
