@@ -6,6 +6,7 @@ import { Box, CssBaseline } from "@mui/joy";
 import Team from "./pages/Team";
 import Home from "./pages/Home";
 import Faq from "./pages/Faq";
+import {SignUp} from "./pages/SignUp";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sponsorship from "./pages/Sponsorship";
 
@@ -119,6 +120,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
+            <Route path="/signup" element={<SignUp />}></Route>
+
             <Route path="/team" element={<Team />}></Route>
             <Route path="/faqs" element={<Faq />}></Route>
             <Route path="/sponsorship" element={<Sponsorship />}></Route>

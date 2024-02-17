@@ -6,6 +6,7 @@ import Box from "@mui/system/Box";
 import Typography from "@mui/joy/Typography";
 import MVDrawer from "./MVDrawer";
 import { Link as RouterLink } from "react-router-dom";
+import Link from "@mui/joy/Link";
 interface Props {
   window?: () => Window;
 }
@@ -28,16 +29,19 @@ export default function NavBar(props: Props) {
       style={{ background: "transparent", boxShadow: "none", width: "100%" }}
     >
       <MVDrawer />
-      <Box
-        component="img"
-        sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
-        alt="Logo"
-        src={logo}
-        style={{ transform: "scale(1.5)", margin: "15px" }}
-      />
-      <Typography level="h2" sx={{ my: 2 }}>
-        MVHacks 7.0
-      </Typography>
+        <Link href={"/"}>
+            <Box
+                component="img"
+                sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
+                alt="Logo"
+                src={logo}
+                style={{ transform: "scale(1.5)", margin: "15px" }}
+            />
+            <Typography level="h2" sx={{ my: 2 }}>
+                MVHacks 7.0
+            </Typography>
+        </Link>
+
       <Box
         sx={{
           display: {
@@ -120,9 +124,7 @@ export default function NavBar(props: Props) {
             variant="solid"
             color="success"
             style={{ border: "none", fontSize: "90%" }}
-            onClick={(evt) => {
-              document.getElementById("email")?.focus();
-            }}
+            onClick={() => window.location.href = '/signup'}
           >
             Sign Up
           </Button>
