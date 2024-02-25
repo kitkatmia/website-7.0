@@ -8,6 +8,7 @@ import StatsCards from "../components/StatsCards";
 import Footer from "../components/Footer";
 import ImageCarousel from "../components/ImageCarousel";
 import Sponsors from "../components/Sponsors";
+import Schedule from "../components/Schedule";
 
 const Home = () => {
   return (
@@ -20,6 +21,9 @@ const Home = () => {
       </Section>
       <Section>
         <StatsCards></StatsCards>
+      </Section>
+      <Section>
+        <Schedule/>
       </Section>
       <Section>
           <ImageCarousel image_urls={["awards", "food", "hackers", "mrnguyen", "presentation"].map(image => `/images/${image}.jpg`)}></ImageCarousel>
