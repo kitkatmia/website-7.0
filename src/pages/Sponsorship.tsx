@@ -26,7 +26,7 @@ const Sponsorship = () => {
       <Section>
         <h1>Prospectus</h1>
         <div>
-          <img src={"/images/Prospectus.png"} width={1150} alt="MVHacks prospectus for sponsorships. Download the full version below" />
+          <img src={"/images/Prospectus.png"} style={{  maxWidth: '1150px',width: "100%", height: "auto"}} alt="MVHacks prospectus for sponsorships. Download the full version below" />
         </div>
       </Section>
       <Section>
