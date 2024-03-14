@@ -15,7 +15,7 @@ const Hero = () => {
         </Chip>
         <Header />
         <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg" paddingBottom={2} paddingTop={2}>
-          Now in its 7th year, MVHacks is one of the Bay Area's top high school hackathons. Hackers of all skill levels are welcome to compete, individually or as a group!
+          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group.
         </Typography>
         {/*<Box*/}
         {/*  action="https://api.web3forms.com/submit"*/}
