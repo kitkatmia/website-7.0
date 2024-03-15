@@ -9,10 +9,24 @@ import Footer from "../components/Footer";
 import ImageCarousel from "../components/ImageCarousel";
 import Sponsors from "../components/Sponsors";
 import Schedule from "../components/Schedule";
+import background from "../data/EarthGraphic.webp";
 
 const Home = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundImage: `url(${background})`,
+        backgroundPosition: "top right",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: {
+          xs: "40vw auto",
+          sm: "35vw auto",
+          md: "35vw auto",
+          lg: "30vw auto",
+          xl: "30vw auto",
+        },
+      }}
+    >
       <Section>
         <NavBar />
       </Section>
@@ -23,13 +37,21 @@ const Home = () => {
         <StatsCards></StatsCards>
       </Section>
       <Section>
-        <Schedule/>
+        <Schedule />
       </Section>
       <Section>
-          <ImageCarousel image_urls={["awards", "food", "hackers", "mrnguyen", "presentation"].map(image => `/images/${image}.jpg`)}></ImageCarousel>
+        <ImageCarousel
+          image_urls={[
+            "awards",
+            "food",
+            "hackers",
+            "mrnguyen",
+            "presentation",
+          ].map((image) => `/images/${image}.jpg`)}
+        ></ImageCarousel>
       </Section>
       <Section>
-          <Sponsors></Sponsors>
+        <Sponsors></Sponsors>
       </Section>
       {/* <Box sx={{
           display: "flex",
