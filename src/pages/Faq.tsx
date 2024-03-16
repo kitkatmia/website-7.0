@@ -23,6 +23,14 @@ const questions: Question[] = [
       "It is completely free! All food, swag, and prizes are provided at no charge.",
   },
   {
+    question: "When / Where is this taking place?",
+    answer: `Saturdary, April 27th, 2024 in the South Bay (exact location TBD - details out soon).`,
+  },
+  {
+    question: "How long will this hackathon be?",
+    answer: `12 hours (one-day event)!`,
+  },
+  {
     question: "Do I need programming experience?",
     answer: `No - this is a fantastic learning opportunity! Hackers can expect to be able to attend
         educational workshops run by industry professionals in addition to experienced adult mentors

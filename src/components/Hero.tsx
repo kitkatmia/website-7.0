@@ -14,8 +14,8 @@ const Hero = () => {
           MVHacks 7.0
         </Chip>
         <Header />
-        <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg" paddingBottom={2} paddingTop={2}>
-          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group.
+        <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg" paddingTop={2} paddingBottom={2}>
+          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group. This year's event will take place <Box sx={{ fontWeight: 'bold' }} display='inline'>Saturdary, April 27th, 2024</Box> in the <Box sx={{ fontWeight: 'bold' }} display='inline'>South Bay</Box> (exact location TBD).
         </Typography>
         {/*<Box*/}
         {/*  action="https://api.web3forms.com/submit"*/}
