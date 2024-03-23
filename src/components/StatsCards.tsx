@@ -118,7 +118,6 @@ const StatCard: React.FC<StatCardProps> = ({ card, index }) => {
         sx={{
           width: "100%",
           pl: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)",
-          margin: "1%",
           marginBottom: "5%",
           padding: "0",
           display: "flex",

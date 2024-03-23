@@ -15,6 +15,12 @@ const Home = () => {
   return (
     <Box
       sx={{
+      //currently only works well with black background
+        background: 'linear-gradient(-135deg, rgba(74,160,152, 0.4), rgba(25, 101, 168, 0.25), rgba(82, 33, 187, 0.2), rgba(68, 115, 158, 0.1))',
+    }}
+    >
+    <Box
+      sx={{
         backgroundImage: `url(${background})`,
         backgroundPosition: "top right",
         backgroundRepeat: "no-repeat",
@@ -66,7 +72,8 @@ const Home = () => {
 
       {/* </Box> */}
       <Footer></Footer>
-    </Box>
+      </Box>
+      </Box>
   );
 };
 export default Home;
