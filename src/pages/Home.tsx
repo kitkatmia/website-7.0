@@ -16,7 +16,7 @@ const Home = () => {
     <Box
       sx={{
       //currently only works well with black background
-        background: 'linear-gradient(-135deg, rgba(74,160,152, 0.4), rgba(25, 101, 168, 0.25), rgba(82, 33, 187, 0.2), rgba(68, 115, 158, 0.1))',
+        background: 'linear-gradient(-135deg, rgba(74, 124, 160, 0.30), rgba(25, 101, 168, 0.17), rgba(60, 23, 138, 0.15), rgba(68, 115, 158, 0.05))',
     }}
     >
     <Box
