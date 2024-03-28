@@ -43,7 +43,7 @@ export default function Schedule() {
         sx={{
           bordercolor: "#FFFFFF",
           border: "1px solid #c92978",
-          backgroundColor: "rgb(0, 0, 0, 0)",
+          backgroundColor: "transparent",
           borderRadius: "11px",
           overflow: "hidden",
           "& tr > *:not(:first-of-type)": { textAlign: "right" },
@@ -65,6 +65,7 @@ export default function Schedule() {
                 color: "#c92978",
                 fontSize: "1.4em",
                 textAlign: "center",
+                backgroundColor: "transparent",
               }}
             >
               Time
@@ -74,6 +75,7 @@ export default function Schedule() {
                 color: "#c92978",
                 fontSize: "1.4em",
                 textAlign: "center",
+                backgroundColor: "transparent",
               }}
             >
               Event
