@@ -113,6 +113,7 @@ const bootstrapTheme = extendTheme({
 });
 
 function App() {
+  console.log(process.env.REACT_APP_HIDDEN_CTF);
   return (
     <CssVarsProvider theme={bootstrapTheme} defaultMode="dark">
       <CssBaseline />
