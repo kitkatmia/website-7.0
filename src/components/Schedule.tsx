@@ -8,15 +8,14 @@ function createData(date: string, event: string) {
 }
 
 const rows = [
-  createData("7:00AM", "Opening Ceremony"),
-  createData("7:30AM", "Start Hacking"),
-  createData("8:00AM", "Capture the flag start"),
-  createData("9:00AM", "Workshop 1 (Tentative)"),
-  createData("10:30AM", "Workshop 2 (Tentative)"),
-  createData("11:30AM", "Lunch"),
-  createData("1:00PM", "Workshop 3 (Tentative)"),
-  createData("2:00PM", "Guess the Image"),
-  createData("3:00PM", "Workshop 4 (Tentative)"),
+  createData("8:00AM", "Opening Ceremony"),
+  createData("8:30", "Start Hacking"),
+  createData("9:00AM", "Capture the flag start"),
+  createData("10:30AM", "Workshop 1 (Tentative)"),
+  createData("11:30AM", "Lunch (provided by MVHacks)"),
+  createData("1:00PM", "Crowdstrike Workshop"),
+  createData("2:00PM", "Guess the Image Game"),
+  createData("3:00PM", "Workshop 3 (Tentative)"),
   createData("4:30PM", "Geoguessr Multiplayer live"),
   createData("5:30PM", "Cup stacking"),
   createData("7:00PM", "Submissions"),

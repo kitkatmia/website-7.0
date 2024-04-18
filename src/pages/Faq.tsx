@@ -23,6 +23,10 @@ const questions: Question[] = [
       "It is completely free! All food, swag, and prizes are provided at no charge.",
   },
   {
+    question: "What about food?",
+    answer: `MVHacks will provide a free lunch to all participants!`,
+  },
+  {
     question: "When / Where is this taking place?",
     answer: `8am to 8pm on Sunday, April 28th, 2024 at Mountain View, California's Hacker Dojo.`,
   },
@@ -54,7 +58,6 @@ const questions: Question[] = [
     question: "What are the rules?",
     answer: `Be nice, respectful, and have fun! Hackers are expected to behave appropriately and safely at all times, and abide by the MLH Code of Conduct.`,
   },
-
 ];
 
 const Faq = () => {
