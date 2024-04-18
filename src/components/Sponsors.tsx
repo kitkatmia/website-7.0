@@ -47,7 +47,6 @@ const Sponsors = () => {
                     <Card variant={"soft"} sx={{backgroundColor: "rgba(255,230,0,0.2)", border: "none", height: "100%"}}>
                         <h2 style={{color: "white"}}>Gold</h2>
                         <ImagesContainer>
-                            <img src={"./images/gen.png"} style={{width: "25%"}} alt="Gen"/>
                             <img src={"./images/malwarebytes.png"} style={{width: "25%"}} alt="Malware Bytes"/>
                         </ImagesContainer>
                     </Card>
