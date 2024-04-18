@@ -9,7 +9,7 @@ function createData(date: string, event: string) {
 
 const rows = [
   createData("8:00AM", "Opening Ceremony"),
-  createData("8:30", "Start Hacking"),
+  createData("8:30AM", "Start Hacking"),
   createData("9:00AM", "Capture the flag start"),
   createData("10:30AM", "Workshop 1 (Tentative)"),
   createData("11:30AM", "Lunch (provided by MVHacks)"),
