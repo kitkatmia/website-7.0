@@ -71,7 +71,10 @@ const cardInfo: CardItem[] = [
 ];
 
 const Item = styled(Sheet)(({ theme }) => ({
-  background: "linear-gradient(to bottom right, #787878, #292929)",
+  // old commented out
+  // background: "linear-gradient(to bottom right, #787878, #292929)",
+  background: "#332d5240",
+  backdropFilter: "blur(3px)",
   ...theme.typography["body-sm"],
   padding: theme.spacing(1),
   textAlign: "center",
@@ -119,6 +122,8 @@ const StatCard: React.FC<StatCardProps> = ({ card, index }) => {
           width: "100%",
           pl: "calc(calc(calc(100vw - min(100vw, 1200px)) / 2) + 1rem)",
           marginBottom: "5%",
+          // marginLeft: "0",
+          // marginRight: "0",
           padding: "0",
           display: "flex",
           justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
@@ -126,10 +131,14 @@ const StatCard: React.FC<StatCardProps> = ({ card, index }) => {
       >
         <Box
           sx={{
-            border: "1px solid #c92978",
+            // old commented out
+            // border: "1px solid #c92978",
+            // background: "transparent",
             borderRadius: "11px",
             width: {lg:"50%",md:"50%", sm:"100%", xs:"100%"},
-            background: "transparent",
+            border: "1px solid #6d90ea30",
+            background: "#332d5240",
+            backdropFilter: "blur(3px)"
           }}
         >
           <Typography

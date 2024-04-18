@@ -24,7 +24,7 @@ const questions: Question[] = [
   },
   {
     question: "When / Where is this taking place?",
-    answer: `Saturdary, April 27th, 2024 in the South Bay (exact location TBD - details out soon).`,
+    answer: `8am to 8pm on Sunday, April 28th, 2024 at Mountain View, California's Hacker Dojo.`,
   },
   {
     question: "How long will this hackathon be?",
