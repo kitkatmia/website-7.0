@@ -9,6 +9,7 @@ import Faq from "./pages/Faq";
 import {SignUp} from "./pages/SignUp";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sponsorship from "./pages/Sponsorship";
+import Ctf from "./pages/Ctf";
 
 // TODO: change to pink color
 const palette = {
@@ -125,6 +126,7 @@ function App() {
 
             <Route path="/team" element={<Team />}></Route>
             <Route path="/faqs" element={<Faq />}></Route>
+            <Route path="/ctf" element={<Ctf />}></Route>
             <Route path="/sponsorship" element={<Sponsorship />}></Route>
           </Routes>
         </BrowserRouter>
