@@ -64,8 +64,9 @@ const Sponsors = () => {
                     <Card variant={"soft"} sx={{backgroundColor: "rgba(255,150,0,0.2)", border: "none", height: "100%"}}>
                         <h2 style={{color: "white"}}>Bronze</h2>
                         <ImagesContainer>
-                            <img src={"./images/knowbe4.png"} style={{width: "35%"}} alt="KnowBe4"/>
-                            <img src={"./images/hulanetworks.png"} style={{width: "35%"}} alt="Hula Networks"/>
+                            <img src={"./images/knowbe4.png"} style={{width: "30%"}} alt="KnowBe4"/>
+                            <img src={"./images/hulanetworks.png"} style={{ width: "30%" }} alt="Hula Networks" />
+                            <img src={"./images/37_signals.jpeg"} style={{width: "30%"}} alt="37 Signals"/>
                         </ImagesContainer>
                     </Card>
                 </Grid>
