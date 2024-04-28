@@ -13,6 +13,10 @@ import {ChevronRight, LogoDev} from "@mui/icons-material";
 const Ctf = () => {
     const ctfs = [{
         name: "RSA 1",
+        description: "What is RSA? Given, decrypt the flag!",
+        hints: [
+            <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation">RSA</a>
+        ],
         downloads: [
             {
                 name: "Script",
@@ -26,6 +30,10 @@ const Ctf = () => {
     },
     {
         name: "RSA 2",
+        description: "Mr. Fermat would be very happy about this one...",
+        hints: [
+            "What is Fermat factorization?"
+        ],
         downloads: [
             {
                 name: "Script",
@@ -39,13 +47,28 @@ const Ctf = () => {
     },
     {
         name: "Baconian",
+        description: "Decrypt the cipher!",
+        hints: [],
         downloads: [
             {
                 name: "Script",
                 link: "/baconian.py",
             },
         ]
-    }]
+    },
+    {
+        name: "Crowdstrike",
+        description: "The flag is somewhere close to the Crowdstrike banner",
+        hints: [],
+        downloads: []
+    },
+    {
+        name: "This website",
+        description: "This website hides a flag!",
+        hints: [],
+        downloads: []
+    }
+]
     return (
         <div>
             <Box>
@@ -68,7 +91,7 @@ const Ctf = () => {
                             </Typography>
                             
                             <IconButton size="lg" variant="solid" color="primary" sx={{width: "100%"}} onClick={() => {
-                                window.location.href = "https://forms.gle/bTZHFPv4Tc1KTrYJ9"
+                                window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeeEKG1pTti1yZ_eVuh7ns_QXVKiTwlgMwLrsrW3ByWGVUs4Q/viewform?usp=sf_link"
                             }}>
                                 Submit Flags
                                 <ChevronRight />
@@ -83,19 +106,30 @@ const Ctf = () => {
                     <thead>
         <tr>
           <th>CTF Name</th>
+          <td>Description</td>
           <th>Downloads</th>
+          <th>Hints</th>
         </tr>
       </thead>
       <tbody>
         {ctfs.map((row) => (
           <tr key={row.name}>
             <td>{row.name}</td>
+            <td>{row.description}</td>
             <td>{row.downloads.map((dl) => (
                 <div>
                     <a href={dl.link}>{dl.name}</a>
                     <br/>
                 </div>
             ))}
+            </td>
+            <td>
+                {row.hints.map((hint, idx) => (
+                    <details>
+                        <summary>Hint {idx + 1}</summary>
+                        {hint}
+                    </details>
+                ))}
             </td>
           </tr>
         ))}
