@@ -13,6 +13,7 @@ interface Props {
 
 const navItems = [
   ["Home", "/"],
+  ["CTF", "/ctf"],
   ["FAQs", "/faqs"],
   ["Team", "/team"],
   ["Sponsors", "/sponsorship"],
@@ -32,7 +33,7 @@ export default function NavBar(props: Props) {
         <Link href={"/"}>
             <Box
                 component="img"
-                sx={{ height: 32, maxWidth: 160, borderRadius: "25%" }}
+                sx={{ height: 32, maxWidth: 200, borderRadius: "25%" }}
                 alt="Logo"
                 src={logo}
                 style={{ transform: "scale(1.5)", margin: "15px" }}
@@ -62,7 +63,6 @@ export default function NavBar(props: Props) {
             borderRadius: "5px",
             overflow: "hidden",
           }}
-          sx={{ width: "80%" }}
         >
           {navItems.map((item) => (
             <RouterLink
