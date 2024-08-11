@@ -13,7 +13,7 @@ interface Props {
 
 const navItems = [
   ["Home", "/"],
-  ["CTF", "/ctf"],
+  // ["CTF", "/ctf"],
   ["FAQs", "/faqs"],
   ["Team", "/team"],
   ["Sponsors", "/sponsorship"],
@@ -116,7 +116,7 @@ export default function NavBar(props: Props) {
             sx={{
               ml: 1,
               flexShrink: 0,
-              minWidth: "80px",
+              minWidth: "120px",
               width: "20%",
               textTransform: "none",
               borderRadius: "11px",
@@ -124,9 +124,11 @@ export default function NavBar(props: Props) {
             variant="solid"
             color="success"
             style={{ border: "none", fontSize: "90%" }}
-            onClick={() => window.location.href = '/signup'}
+            onClick={() => {
+              window.location.href = "https://tinyurl.com/mvh8interest"
+            }}
           >
-            Sign Up
+            Alert Me
           </Button>
         </RouterLink>
       </Box>

@@ -15,7 +15,7 @@ const Hero = () => {
         </Chip>
         <Header />
         <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg" paddingTop={2} paddingBottom={2}>
-          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group. This year's event will take place <Box sx={{ fontWeight: 'bold' }} display='inline'>8 am to 8 pm Sunday, April 28th, 2024</Box> in <Box sx={{ fontWeight: 'bold' }} display='inline'><a href="https://www.google.com/maps/dir//mountain+view+hacker+dojo/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x808fb71274e6acd3:0x9f6f7e2c42ca6e51?sa=X&ved=1t:3061&ictx=111" target="_blank" rel="noopener noreferrer">Mountain View's Hacker Dojo</a></Box>.
+          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group. This year's event took place from 8 am to 8 pm Sunday, April 28th, 2024 in Mountain View's Hacker Dojo. <Box sx={{ fontWeight: 'bold' }} display='inline'>Sign up to be alerted when details about MVHacks 8.0 are released.</Box>
         </Typography>
         {/*<Box*/}
         {/*  action="https://api.web3forms.com/submit"*/}
@@ -57,10 +57,10 @@ const Hero = () => {
           {/*  placeholder="Get notified"*/}
           {/*  sx={{ flex: "auto" }}*/}
           {/*/>*/}
-          <IconButton size="lg" variant="solid" color="primary" sx={{width: "100%"}} onClick={() => {
-            window.location.href = "/signup"
-          }}>
-              Sign Up
+        <IconButton size="lg" variant="solid" color="primary" sx={{ width: "100%" }} onClick={() => {
+          window.location.href = "https://tinyurl.com/mvh8interest"
+        }}>
+              Alert Me
             <ChevronRight />
           </IconButton>
         {/*</Box>*/}

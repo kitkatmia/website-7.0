@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }  from "react";
 import "./App.css";
 
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
@@ -114,7 +114,12 @@ const bootstrapTheme = extendTheme({
 });
 
 function App() {
-  console.log(process.env.REACT_APP_HIDDEN_CTF);
+  // console.log(process.env.REACT_APP_HIDDEN_CTF);
+
+  useEffect(() => {
+    alert('Hello! MVHacks 7.0 has concluded. If you\'d like, you may sign up to be alerted when details about MVHacks 8.0 are released.');
+  }, []);
+
   return (
     <CssVarsProvider theme={bootstrapTheme} defaultMode="dark">
       <CssBaseline />
@@ -126,7 +131,7 @@ function App() {
 
             <Route path="/team" element={<Team />}></Route>
             <Route path="/faqs" element={<Faq />}></Route>
-            <Route path="/ctf" element={<Ctf />}></Route>
+            {/* <Route path="/ctf" element={<Ctf />}></Route> */}
             <Route path="/sponsorship" element={<Sponsorship />}></Route>
           </Routes>
         </BrowserRouter>
