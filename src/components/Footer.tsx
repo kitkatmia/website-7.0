@@ -40,7 +40,7 @@ export default function Footer() {
                     Check out previous projects!
                 </Button>
             </Link>
-            <Link href="mailto:amanda@mvhacks.io" sx={{marginBottom: "5px"}}>
+            <Link href="mailto:alexm@mvhacks.io" sx={{marginBottom: "5px"}}>
                 <Button
                     size="sm"
                     sx={{
