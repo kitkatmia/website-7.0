@@ -16,6 +16,7 @@ const navItems = [
   // ["CTF", "/ctf"],
   ["FAQs", "/faqs"],
   ["Team", "/team"],
+  ["Apply", "/apply"],
   ["Sponsors", "/sponsorship"],
 ];
 
@@ -30,18 +31,18 @@ export default function NavBar(props: Props) {
       style={{ background: "transparent", boxShadow: "none", width: "100%" }}
     >
       <MVDrawer />
-        <Link href={"/"}>
-            <Box
-                component="img"
-                sx={{ height: 32, maxWidth: 200, borderRadius: "25%" }}
-                alt="Logo"
-                src={logo}
-                style={{ transform: "scale(1.5)", margin: "15px" }}
-            />
-            <Typography level="h2" sx={{ my: 2 }}>
-                MVHacks 7.0
-            </Typography>
-        </Link>
+      <Link href={"/"}>
+        <Box
+          component="img"
+          sx={{ height: 32, maxWidth: 200, borderRadius: "25%" }}
+          alt="Logo"
+          src={logo}
+          style={{ transform: "scale(1.5)", margin: "15px" }}
+        />
+        <Typography level="h2" sx={{ my: 2 }}>
+          MVHacks 7.0
+        </Typography>
+      </Link>
 
       <Box
         sx={{
@@ -101,36 +102,25 @@ export default function NavBar(props: Props) {
             </RouterLink>
           ))}
         </ButtonGroup>
-        <RouterLink
-          to={"/"}
-          key={"Sign up"}
-          style={{
-            textDecoration: "none",
-            color: "inherit",
-            border: "none",
-            margin: 0,
+        <Button
+          size="sm"
+          sx={{
+            ml: 1,
+            flexShrink: 0,
+            minWidth: "100px",
+            width: "10%",
+            textTransform: "none",
+            borderRadius: "11px",
+          }}
+          variant="solid"
+          color="success"
+          style={{ border: "none", fontSize: "90%" }}
+          onClick={() => {
+            window.location.href = "https://tinyurl.com/mvh8interest";
           }}
         >
-          <Button
-            size="sm"
-            sx={{
-              ml: 1,
-              flexShrink: 0,
-              minWidth: "120px",
-              width: "20%",
-              textTransform: "none",
-              borderRadius: "11px",
-            }}
-            variant="solid"
-            color="success"
-            style={{ border: "none", fontSize: "90%" }}
-            onClick={() => {
-              window.location.href = "https://tinyurl.com/mvh8interest"
-            }}
-          >
-            Alert Me
-          </Button>
-        </RouterLink>
+          Alert Me
+        </Button>
       </Box>
     </Box>
   );
