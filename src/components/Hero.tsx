@@ -15,7 +15,7 @@ const Hero = () => {
         </Chip>
         <Header />
         <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg" paddingTop={2} paddingBottom={2}>
-          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group. This year's event took place from 8 am to 8 pm Sunday, April 28th, 2024 in Mountain View's Hacker Dojo. <Box sx={{ fontWeight: 'bold' }} display='inline'>Sign up to be alerted when details about MVHacks 8.0 are released. Applications to join the team are now open. All applications are due by September 15th at 11:59pm.</Box>
+          Each year, high school hackers from across the Bay Area come together at MVHacks to create cool projects, learn from experts, and participate in 12 hours of hacking! Hackers of all skill levels are welcome to compete, individually or as a group. This year's event took place from 8 am to 8 pm Sunday, April 28th, 2024 in Mountain View's Hacker Dojo. <Box sx={{ fontWeight: 'bold' }} display='inline'>**You can now sign up to be alerted when details about MVHacks 8.0 are released. Additionally, applications to join the MVHacks team are now open and must be submitted by September 15th at 11:59 PM.</Box>
         </Typography>
         {/*<Box*/}
         {/*  action="https://api.web3forms.com/submit"*/}
