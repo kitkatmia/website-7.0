@@ -13,9 +13,10 @@ export default function MVDrawer() {
 
   const navItems = [
     ["Home", "/"],
-    ["CTF", "/ctf"],
+    // ["CTF", "/ctf"],
     ["FAQs", "/faqs"],
     ["Team", "/team"],
+    ["Apply", "/apply"],
     ["Sponsors", "/sponsorship"],
   ];
   
