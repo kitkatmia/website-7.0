@@ -17,13 +17,6 @@ const Apply = () => {
     }, []);
     
   return (
-    <Box sx={{
-      textAlign: "center", alignItems: "center", justifyContent: "center",padding:0
-        }}>
-            <Section>
-                <NavBar />
-            </Section>
-            <Section>
             <Box
             className="outsideFrame"
       sx={{
@@ -56,11 +49,6 @@ const Apply = () => {
         marginWidth={0}
       />
     </Box>
-
-            </Section>
-
-            <Footer></Footer>
-        </Box>
 
     )
 }
